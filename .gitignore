@@ -11,3 +11,7 @@ opa-debug-js
 *.api-txt
 *.exe
 *.log
+
+tfplan
+input.json
+.terraform
