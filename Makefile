@@ -16,3 +16,11 @@ verify:
 .PHONY: gen_tf_plan
 gen_tf_plan:
 	@./scripts/gen_tf_plan.sh
+
+
+# This are used to test various commands
+pull_tf_bundle:
+	conftest pull git::https://github.com/xNok/demo-open-policy-agent.git//terraform
+
+pull_tf_bundle_and_test:
+	conftest test --update git::https://github.com/xNok/demo-open-policy-agent.git//terraform 
